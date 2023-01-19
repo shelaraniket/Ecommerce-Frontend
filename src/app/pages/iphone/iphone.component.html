@@ -1,0 +1,21 @@
+<div class="container-fluid w-100" style="margin-top: 66px;background-color: black;">
+    <div class="row pt-3">
+        <div class="col-md-4  px-5" *ngFor="let iphones of alliphone">
+            <div class="card bg-light" style="width: 18rem;">
+                <a style="text-decoration: none; color: white;" class="text-dark">
+                    <img src={{iphones.imageUrl}} class="card-img-top" alt="..." style="height: 250px; width: 260px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{iphones.model | uppercase}}</h5>
+                        <h6 class="card-subtitle mb-1 text-muted">{{iphones.storage}}GB</h6>
+                        <p class="card-text m-0">Color : {{iphones.color}}</p>
+                        <p class="card-text p-0">Price : ₹{{iphones.price}}</p>
+                        <!-- <a routerLink="/home/iphone/description" (click)="getbyid(iphones.idnew)" class="btn btn-primary m-2">View More</a> -->
+                        <button class="btn btn-primary m-2" (click)="getbyid(iphones.idnew)" >View More</button>
+                        <button class="btn btn-primary" (click)="addtocart(iphones.model,iphones.price,iphones.color,iphones.storage,iphones.imageUrl,iphones._id)"><i class="fas fa-shopping-cart" ></i> Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+      </div>    
+
+    </div>
+</div>

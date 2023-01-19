@@ -1,0 +1,164 @@
+<div class="container-fluid text-white bg-dark mt-5 p-1">
+    <div class="card bg-dark ">
+        <div class="card-body">
+            <!-- <h6 class="card-subtitle text-center">globe type chair for rest</h6> -->
+            <h4 class="card-title text-center">{{AirPod.model}}</h4>
+            <div class="row">
+                <!-- <div class="col-lg-5 col-md-5 col-sm-6">
+                    <div class="white-box text-center"><img style="height: 330px;" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664008693/Croma%20Assets/Communication/Mobiles/Images/243511_0_o8kuhr.png/mxw_2048,f_auto" class="img-responsive"></div>
+                </div> -->
+                <div class="col-lg-5 col-md-5 col-sm-6">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img style="height: 450px;" class="d-block w-100" src={{AirPod.imageUrl}} alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img  style="height: 450px;" class="d-block w-100" src={{AirPod.imageUrl2}} alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img  style="height: 450px;" class="d-block w-100" src={{AirPod.imageUrl3}} alt="Second slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-6">
+                    <h4 class="box-title mt-5">Product description</h4>
+                    <h6>Color : White</h6>
+                    <h6 class="text-danger">Rating :{{AirPod.Rating}} <i class="bi bi-star-fill"></i></h6>
+
+                    <h5 class="mt-3">
+                       Price : ₹{{AirPod.price}}
+                    </h5>
+                    <a routerLink="/cart" class="mx-2">
+                        <button class="btn btn-success btn-rounded" (click)="addtocart(AirPod.model,AirPod.price,AirPod.imageUrl,AirPod._id)" data-toggle="tooltip" title="" data-original-title="Add to cart">
+                            <i class="fa fa-shopping-cart"></i>
+                        </button>
+                    </a>
+                    <button class="btn btn-primary btn-rounded">Buy Now</button>
+                    <h3 class="box-title mt-4">Key Highlights</h3>
+                    <div >
+                        <ul class="list-unstyled">
+                            
+                            <li><i class="fa fa-check text-success"></i>Orientation Type :{{AirPod.Orientation}}</li>
+                            <li><i class="fa fa-check text-success"></i>Connectivity :{{AirPod.Connectivity}}</li>
+                            <li><i class="fa fa-check text-success"></i>Battery Life :{{AirPod.BatteryLife}}</li>
+                            <li><i class="fa fa-check text-success"></i>Fast Charging :{{AirPod.FastCharging}}</li>
+                            <li><i class="fa fa-check text-success"></i>Noise Cancellation :{{AirPod.NoiseCancellation}}</li>
+                            <li><i class="fa fa-check text-success"></i>Voice Assistant :{{AirPod.VoiceAssistant}}</li>
+                            <li><i class="fa fa-check text-success"></i>Resistance Type :{{AirPod.ResistanceType}}</li>
+                            <li><i class="fa fa-check text-success"></i>Warranty :{{AirPod.Warranty}}</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3 class="box-title mt-5">General Info</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-product table-danger text-white">
+                            <tbody>
+                                <tr>
+                                    <td>DeviceType</td>
+                                    <td>{{AirPod.DeviceType}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Device Orientation</td>
+                                    <td>{{AirPod.DeviceOrientation}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Brand</td>
+                                    <td>{{AirPod.Brand}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Model Number</td>
+                                    <td>{{AirPod.ModelNumber}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Model Series</td>
+                                    <td>{{AirPod.ModelSeries}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Audio Type</td>
+                                    <td>{{AirPod.AudioType}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Audio Quality</td>
+                                    <td>{{AirPod.AudioQuality}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Audio Technology</td>
+                                    <td>{{AirPod.AudioTechnology}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Ear piece Adjustment</td>
+                                    <td>{{AirPod.EarpieceAdjustment}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Diaphragm Features</td>
+                                    <td>{{AirPod.DiaphragmFeatures}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Cushion Material</td>
+                                    <td>{{AirPod.CushionMaterial}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Compatible OS</td>
+                                    <td>{{AirPod.CompatibleOS}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Compatible Devices</td>
+                                    <td>{{AirPod.CompatibleDevices}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Microphone Availability</td>
+                                    <td>{{AirPod.MicrophoneAvailability}}</td>
+                                </tr>
+                                <tr>
+                                    <td> No of Microphones</td>
+                                    <td>{{AirPod.NoofMicrophones}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Voice Guidance</td>
+                                    <td>{{AirPod.VoiceGuidance}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Additional Smart Functions</td>
+                                    <td>{{AirPod.AdditionalSmartFunctions}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Bluetooth Supported</td>
+                                    <td>{{AirPod.BluetoothSupported}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Bluetooth Specifications</td>
+                                    <td>{{AirPod.BluetoothSpecifications}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Standard BatteryLife</td>
+                                    <td>{{AirPod.StandardBatteryLife}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Charging Features</td>
+                                    <td>{{AirPod.ChargingFeatures}}</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

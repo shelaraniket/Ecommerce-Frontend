@@ -1,0 +1,45 @@
+<div class="container-fluid w-100" style="margin-top: 66px;background-color: black;">
+    <div class="row pt-3">
+        <div class="col-md-4  px-5 mb-3" *ngFor="let iwatch of IWatch">
+            <div class="card " style="width: 18rem;">
+                <a style="text-decoration: none; color: white;">
+                    <img src={{iwatch.imageUrl}} class="card-img-top" alt="..." style="height: 250px; width: 260px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">{{iwatch.model | uppercase}}</h5>
+                        <!-- <h6 class="card-subtitle mb-1 text-muted">{{airpod.storage}}</h6> -->
+                        <p class="card-text my-1 text-danger">ratings : {{iwatch.Rating}}<i class="bi bi-star-fill mx-1"></i></p>
+                        <p class="card-text p-0 my-1 text-dark">Color : {{iwatch.Color}}</p>
+                        <p class="card-text p-0 my-1 text-dark">Storgae : {{iwatch.InternalStorage}}</p>
+
+                        <p class="card-text p-0 my-1 text-dark">Price : ₹{{iwatch.price}}</p>
+                        <!-- <a routerLink="/home/iphone/description" (click)="getbyid(iphones.idnew)" class="btn btn-primary m-2">View More</a> -->
+                        <button class="btn btn-primary mx-2 my-1" (click)="getIWatchById(iwatch.idnew)">View More</button>
+                        <!-- <button class="btn btn-primary" ><i class="fas fa-shopping-cart"></i> Add to Cart</button> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" (click)="addtocart(iwatch.model,iwatch.price,iwatch.Color,iwatch.InternalStorage,iwatch.imageUrl,iwatch._id)" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fas fa-shopping-cart"></i>Add To Cart
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content bg-info">
+                                <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="exampleModalLabel">Cart</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    Produt Added to a cart Successfully
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+      </div>    
+

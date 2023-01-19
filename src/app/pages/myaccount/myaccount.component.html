@@ -1,0 +1,18 @@
+<div class="container bg-light mt-5 pt-5">
+      <ul *ngFor="let details of details">
+        <li>{{details.fullname}}</li>
+        <li>{{details.address}}</li>
+        <li>{{details.pincode}}</li>
+        <li>{{details.Phone}}</li>
+        <li>{{details.street}}</li>
+        <li>{{details.date}}</li>
+        <ul *ngFor="let cartitems of details.cartitems">
+            <li>{{details.cartitems.model}}</li>
+            
+        </ul>
+        <!-- <li>{{details.cartitems[1].model}}</li>
+        <li>{{details.cartitems[0].color}}</li> -->
+
+
+      </ul>
+</div>
