@@ -21,9 +21,9 @@
 
 <img width="960" alt="Cart Page" src="https://user-images.githubusercontent.com/96935072/213466007-e7c1f631-89d9-4d82-a90a-d1642b744a1a.png">
 
-<img width="960" alt="Empty Cart Page" src="https://user-images.githubusercontent.com/96935072/213466127-6cefc5f1-441c-4680-8e4f-1b913173c13c.png">
+<img width="960" alt="Screenshot_20230123_093258" src="https://user-images.githubusercontent.com/96935072/213964068-95fe0c3f-be38-457f-9e93-664a94b846c9.png">
 
-<img width="960" alt="Sucess Page" src="https://user-images.githubusercontent.com/96935072/213466223-a3e45eec-214c-4768-9145-c0cebacf5d47.png">
+<img width="958" alt="Screenshot_20230123_093424" src="https://user-images.githubusercontent.com/96935072/213964091-6502aacc-5eb1-47fa-aa7d-b99d08712c0e.png">
 
 <img width="960" alt="Screenshot_20230116_215315" src="https://user-images.githubusercontent.com/96935072/213466441-41df6369-dbcb-413c-931f-63cf7364a378.png">
 
